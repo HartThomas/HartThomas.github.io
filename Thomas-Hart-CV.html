@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./CV-template.css" /> -->
+    <style>
+      * {
+        width: 960px;
+        /* border: solid red 2px; */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-left: 0;
+
+        width: auto;
+        font-size: xxx-large;
+      }
+
+      h2 {
+        width: auto;
+        background-color: rgba(230, 120, 120, 0.568);
+        border-radius: 0 10px 10px 0;
+        padding: 5px;
+        color: white;
+      }
+
+      .right-column-title {
+        background-color: rgba(128, 128, 128, 0.384);
+        border-radius: 10px 0 0 10px;
+        text-indent: 20px;
+      }
+      a {
+        width: auto;
+      }
+      div {
+        width: auto;
+      }
+
+      p {
+        width: auto;
+        padding-left: 10px;
+        padding-bottom: 2px;
+        padding-right: 5px;
+        padding-top: 2px;
+        margin: 0;
+        word-wrap: normal;
+      }
+
+      .body-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .left-column {
+        width: calc(30% - 15px);
+        /* background-color: rgba(230, 120, 120, 0.568); */
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 5px;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right-column {
+        width: calc(70% - 20px);
+        padding-left: 20px;
+      }
+
+      .left-column-list {
+        text-align: center;
+      }
+      .left-column-specific1 {
+        display: grid;
+        grid-auto-columns: auto;
+        grid-template-columns: 1fr 1fr;
+        height: 14rem;
+        width: 100%;
+      }
+      .left-column-specific2 {
+        display: grid;
+        grid-auto-columns: auto;
+        grid-template-columns: 1fr 1fr;
+        height: 11rem;
+        width: 100%;
+      }
+
+      .list-member {
+        /* border: solid 1px grey; */
+        border-radius: 5px;
+        margin: 5px;
+        width: auto;
+        padding-left: 5px;
+        padding-bottom: 2px;
+        padding-right: 5px;
+        padding-top: 2px;
+        margin: 0;
+        word-wrap: normal;
+        list-style: none;
+      }
+
+      .logo {
+        height: 30px;
+        width: 30px;
+        float: right;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(91, 148, 80);
+        border-radius: 0 0 10px 10px;
+        margin-left: 11px;
+        color: white;
+        width: calc(100% - 11px);
+      }
+      .details {
+        padding-top: 40px;
+      }
+      #left {
+        text-align: right;
+      }
+      #header-logo {
+        padding-top: 40px;
+        height: 40px;
+        width: 40px;
+      }
+      .project1 {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        word-wrap: break-word;
+        padding-bottom: 10px;
+      }
+      .project-header {
+        padding-top: 10px;
+        text-align: center;
+      }
+      .projects {
+        padding-left: 10px;
+      }
+      .project2 {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        word-wrap: break-word;
+        padding-top: 10px;
+        border-top: solid grey 1px;
+      }
+      ul {
+        padding-inline-start: 0;
+      }
+      #quals {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-top: solid gray 1px;
+        border-radius: 0;
+      }
+      #first-qual {
+        padding-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <p class="details" id="left">
+        <b> Contact me: <br /> </b>
+        07576338775 <br />
+        t.j.hart89@hotmail.co.uk
+      </p>
+      <img
+        src="./icons8-telephone-64 (1).png"
+        alt="phone-logo"
+        class="logo"
+        id="header-logo"
+      />
+      <h1>Thomas Hart</h1>
+      <img
+        src="./icons8-github-32.png"
+        alt="github-logo"
+        class="logo"
+        id="header-logo"
+      />
+      <p class="details">
+        <b> Github link: </b>
+        <br />https://github.com/HartThomas <br />Based in Manchester
+      </p>
+    </div>
+    <div class="body-container">
+      <div class="left-column">
+        <h2>
+          Specific skills:<img
+            src="./icons8-skills-64.png"
+            alt="github-logo"
+            class="logo"
+          />
+        </h2>
+        <ul class="left-column-specific1">
+          <li class="list-member">• Javascript</li>
+          <li class="list-member">• pSQL</li>
+          <li class="list-member">• test-driven development</li>
+          <li class="list-member">• Node Postgres</li>
+
+          <li class="list-member">• git version control</li>
+          <li class="list-member">• error handling middleware</li>
+          <li class="list-member">• React</li>
+          <li class="list-member">• CSS</li>
+          <li class="list-member">• Axios</li>
+          <li class="list-member">• Cypress</li>
+          <li class="list-member">• MongoDB</li>
+        </ul>
+
+        <h2>
+          General skills:
+          <img
+            src="./icons8-skills-64 (1).png"
+            alt="github-logo"
+            class="logo"
+          />
+        </h2>
+        <ul class="left-column-specific2">
+          <li class="list-member">• Pair programming</li>
+          <li class="list-member">• very willing to ask for help</li>
+
+          <li class="list-member">• problem solving</li>
+          <li class="list-member">• able to follow instructions</li>
+          <li class="list-member">• self learning</li>
+          <li class="list-member">• self motivation</li>
+          <li class="list-member">• team work</li>
+        </ul>
+        <!-- <h2>
+          Projects<img
+            src="./icons8-github-32.png"
+            alt="github-logo"
+            class="logo"
+          />
+        </h2>
+        <div class="list-member">
+          <p class="left-column-list">
+            <a
+              href="https://github.com/HartThomas/NC-Games"
+              class="project-link"
+            >
+              https://github.com/HartThomas/NC-Games
+            </a>
+            <br />
+            Backend API building project, using PSQL and Express
+          </p>
+        </div>
+        <div class="list-member">
+          <p class="left-column-list">
+            <a
+              href="https://github.com/HartThomas/FE-NC-Games"
+              class="project-link"
+            >
+              https://github.com/HartThomas/FE-NC-Games
+            </a>
+            <br />
+            Frontend react app using previous backend project
+          </p>
+        </div> -->
+        <h2>
+          Qualifications
+          <img
+            src="./icons8-certificate-48.png"
+            alt="qualification"
+            class="logo"
+          />
+        </h2>
+
+        <div class="left-column-list">
+          <div class="list-member" id="first-qual">
+            <b>Northcoders 2023</b><br />
+            <p>Northcoders Software Development Bootcamp</p>
+          </div>
+          <div class="list-member" id="quals">
+            <b>Nexperia 2019 - 2020</b> <br />
+            Manufacturing Apprenticeship
+          </div>
+          <div class="list-member" id="quals">
+            <b> Aberystwyth University 2008 - 2012 </b><br />
+            Diploma in Higher Education - Mathematics<br />
+          </div>
+          <div class="list-member" id="quals">
+            <b> Altrincham Grammar School for Boys 2001 - 2008 </b> <br />
+            • A2: Mathematics-(C), Physics-(D), Philosophy-(E)<br />
+            • AS: English Literature (E)<br />
+            • 10 GCSE (1 A*, 3 A, 6 B)<br />
+          </div>
+        </div>
+      </div>
+      <div class="right-column">
+        <h2 class="right-column-title">Personal Profile</h2>
+        <p>
+          I am seeking my first Junior Development role, where I can continue to
+          grow the skills I have gained from Northcoders and progress a career
+          in this fast-paced industry! <br />
+          Having worked in physical jobs for the last 5 years, I felt I was not
+          getting the right mental stimulation - therefore I decided to change
+          my future and enroll on a coding bootcamp. I find myself mulling over
+          problems whilst walking the dog, and being kept up at night because I
+          forgot to add a semi-colon to my code! It has been fun seeing myself
+          using skills gained from previous employment and applying them to the
+          code which I write.
+        </p>
+        <h2 class="right-column-title">NorthCoders</h2>
+        <p>
+          <b> Weeks 1 - 5 | Fundamentals: </b>
+          Developing a fundamental understanding of the Javascript programming
+          language and implementing industry best-practices, such as creating
+          algorithms, test-driven development and Git version control. <br />
+          <b> Weeks 6 - 8 | Back-end: </b>
+          Delving into the intricacies of back-end, including pSQL queries, Node
+          Postgres, and error-handling middleware. Concluded this section by
+          developing the back-end for an API, and hosting it.<br />
+          <b> Weeks 9 - 11 | Front-end: </b>
+          Learned some of the wide range of approaches to front-end, with a
+          greater focus on React, including creating components, data fetching
+          and custom react hooks. I dipped my toe into the ocean of CSS and
+          concluded this section by developing the front-end for my API.<br />
+          <b> Weeks 12 - 14 | Project: </b>
+          Coding social media site. We used agile methodology, daily stand ups
+          and retro to finish off, to create a front end and back end. We
+          implemented 2, new to us, technologies; MongoDB as our database and
+          Cypress for front end testing.<br />
+        </p>
+        <h2 class="right-column-title">Projects</h2>
+        <div class="projects">
+          <div class="project1">
+            <div class="lefthand">
+              <b class="project-header">Game Reviews API</b>
+              <a
+                href="https://github.com/HartThomas/NC-Games"
+                class="project-link"
+              >
+                https://github.com/HartThomas/NC-Games
+              </a>
+            </div>
+            <p>
+              Using PSQL and Express I built an API. You can make several
+              different GET requests, 1 POST, 1 PATCH and 1 DELETE. It uses
+              params in the more specific GET requests, also utilising queries
+              and bodies attached to requests.
+            </p>
+          </div>
+          <div class="project2">
+            <div class="lefthand">
+              <b class="project-header">Game Reviews React App</b>
+              <a
+                href="https://github.com/HartThomas/FE-NC-Games"
+                class="project-link"
+              >
+                https://github.com/HartThomas/FE-NC-Games
+              </a>
+            </div>
+            <p>
+              Frontend react app that uses my previous backend project. It is a
+              website where reviews have been posted and people can read, vote
+              and comment on them. It utilises several different react hooks
+              including useState and useEffect, react router and props.
+            </p>
+          </div>
+          <div class="project2">
+            <div class="lefthand">
+              <b class="project-header">My CV</b>
+              <a href="#">githublol</a>
+            </div>
+            <p>
+              I started writing this CV using a word document and quickly
+              realised I wanted to do this I couldn't there. I decided to put my
+              new skills to good use and write a html document instead.
+            </p>
+          </div>
+        </div>
+        <h2 class="right-column-title">Previous Roles</h2>
+        <p>
+          <b>
+            Nexperia, Advanced Production Assistant | May 2019 - September 2022
+          </b>
+          <br />
+          • The semi-conductors we made were built layer by layer on 6 or 8 inch
+          silicon wafers <br />
+          • I was responsible for programming machines, replacing chemicals and
+          organising workflow all while adhering to health and safety guidelines
+          <br />
+          • I was part of a team of 10. We covered each others breaks and
+          assisted during busy times when we were able<br />
+          • After I finished my first year as an apprentice they offered me a
+          full time role<br />
+          • I was promoted to APA after 1 year as a PA due to my good attendance
+          record and attitude to work<br /><br />
+          <b>
+            Between January 2016 and February 2019 I travelled in South East
+            Asia and Australia with my partner. I worked while in Australia in
+            many farm roles, including fruit picking and potato packing. I’ve
+            decided to not include them but do feel free to ask me about them at
+            interview.
+          </b>
+          <br /><br />
+          Previously I worked for 1.5 years as a call centre
+          <b>customer service</b> agent for Vodafone and Experian. It was in
+          these roles that I discovered my love for <b> solving problems. </b>
+          <!-- 
+          Experian, Aegis Global, Inbound Customer Service | Jun 2015 - Jan
+          2016<br />
+          • Answering incoming calls for a credit reference agency, I had to
+          learn complicated systems and protocols to solve problems for
+          customers<br />
+          • During this job I developed my love for solving problems. I found it
+          gave me an immense satisfaction if I could solve a customer’s
+          problem<br />
+          • My performance was good enough to be promoted to floor walker so I
+          would help my colleagues on their own phone calls when they had a
+          problem<br />
+
+          Vodafone, Convergys, Inbound Sales Executive | Jun 2014 - Jun 2015
+          <br />
+          • Incoming sales and customer service role<br />
+          • I was part of the retentions team, so often customers would want to
+          leave Vodafone and I would try to persuade them not to.<br />
+
+          Royal Mail, Data Entry Keyer | Nov 2013 - Dec 2013<br />
+          • Inputting data from the screen in front of me, I needed good
+          attention to detail to make sure everyone’s Christmas letters got to
+          them on time<br />
+
+          Sue Ryder, Edgeley, Keyholder | June 2013 - Nov 2013 <br />
+          • Volunteering at a charity shop <br />
+          • I was responsible for opening up the shop in the morning, training
+          new volunteers and organising donations<br /> -->
+        </p>
+        <h2 class="right-column-title">Hobbies and Interests</h2>
+        <p>
+          Most of my free time is spent either walking
+          <b> my dog, Saoirse, </b>or playing games. I seem to enjoy any kind of
+          game that involves management of resources or building production
+          lines. You could probably very easily convince me to sit down for any
+          type of board game or card game, I love the thought processes and
+          competitiveness of games like that.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
